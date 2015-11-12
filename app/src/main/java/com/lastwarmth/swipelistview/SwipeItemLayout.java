@@ -125,7 +125,6 @@ public class SwipeItemLayout extends FrameLayout {
     public void smoothCloseMenu() {
         isMenuShowing = false;
         mBaseX = -contentView.getLeft();
-        System.out.println(mBaseX);
         mCloseScroller.startScroll(0, 0, mBaseX, 0, 350);
         postInvalidate();
     }

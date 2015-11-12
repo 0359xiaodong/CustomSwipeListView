@@ -84,12 +84,12 @@ public class SwipeAdapter extends BaseAdapter {
                 Toast.makeText(mContext, "已置顶", Toast.LENGTH_SHORT).show();
             }
         });
-        holder.hadRead.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(mContext, "已阅读", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        holder.hadRead.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(mContext, "已阅读", Toast.LENGTH_SHORT).show();
+//            }
+//        });
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
