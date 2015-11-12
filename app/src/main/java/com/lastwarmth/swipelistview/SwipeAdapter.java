@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -68,11 +68,15 @@ public class SwipeAdapter extends BaseAdapter {
         holder.groupName.setText(myModel.getGroupName());
         holder.content.setText(myModel.getContent());
         // Glide异步加载图片
-        Glide.with(mContext)
+//        Glide.with(mContext)
+//                .load(myModel.getImageUrl())
+//                .centerCrop()
+//                .placeholder(R.mipmap.lb_zjtx)
+//                .crossFade()
+//                .into(holder.imageView);
+        Picasso.with(mContext)
                 .load(myModel.getImageUrl())
-                .centerCrop()
                 .placeholder(R.mipmap.lb_zjtx)
-                .crossFade()
                 .into(holder.imageView);
         holder.toTop.setOnClickListener(new View.OnClickListener() {
             @Override
